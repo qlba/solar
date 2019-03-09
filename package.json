@@ -1,0 +1,19 @@
+{
+  "name": "solar",
+  "version": "0.0.0",
+  "description": "",
+  "main": "solar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qlba/solar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qlba/solar/issues"
+  },
+  "homepage": "https://github.com/qlba/solar#readme"
+}

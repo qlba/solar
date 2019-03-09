@@ -90,6 +90,8 @@ function getPosition(date, lat, lng)
 	const H = siderealTime(d, lw) - c.ra;
 
 	return {
+		declination: c.dec,
+		rightAscension: c.ra,
 		azimuth: azimuth(H, phi, c.dec),
 		altitude: altitude(H, phi, c.dec)
 	};
@@ -126,6 +128,9 @@ function getMoonPosition(date, lat, lng)
 	h = h + astroRefraction(h); // altitude correction for refraction
 
 	return {
+		rightAscension: c.ra,
+		declination: c.dec,
+		distance: c.dist,
 		azimuth: azimuth(H, phi, c.dec),
 		altitude: h,
 		distance: c.dist,
